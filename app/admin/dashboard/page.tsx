@@ -15,7 +15,7 @@ export default function AdminDashboard() {
       if (!data.user) {
         router.push("/login");
       } else {
-        setEmail(data.user.email);
+       setEmail(data.user.email ?? "");
       }
     };
 
