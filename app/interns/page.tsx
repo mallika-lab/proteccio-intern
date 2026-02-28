@@ -13,7 +13,7 @@ export default function InternsPage() {
   id: number;
   name: string;
   email: string;
-  role?: string;
+  role: string;
 };
   useEffect(() => {
     fetchInterns();
