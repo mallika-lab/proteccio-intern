@@ -9,11 +9,11 @@ export default function InternsPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [interns, setInterns] = useState<Intern[]>([]);
-  type Intern = {
+type Intern = {
   id: number;
-  name: string;
-  email: string;
-  role: string;
+  full_name: string | null;
+  email: string | null;
+  phone: string | null;
 };
   useEffect(() => {
     fetchInterns();
