@@ -1,4 +1,4 @@
-import supabase from "@/lib/supabaseClient";
+import { supabase } from "@/lib/supabaseClient";
 
 export async function createProject(data) {
   return await supabase.from("projects").insert([data]);
